@@ -4,9 +4,12 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
-  },
+    /* Center containers automatically */
+    theme: {
+        container: {
+          center: true,
+        },
+    },
   plugins: [],
 }
 
