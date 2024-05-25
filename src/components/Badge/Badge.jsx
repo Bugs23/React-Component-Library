@@ -1,9 +1,9 @@
 import "./Badge.scss"
 
-export default function Badge({color, shape}) {
+export default function Badge({children, color, shape}) {
     return (
         <span className={`badge ${color} ${shape}`}>
-            {color}
+            {children}
         </span>
     )
 }
