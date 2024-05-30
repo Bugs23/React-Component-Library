@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Wireframes
+component-library-wireframes.ai
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
