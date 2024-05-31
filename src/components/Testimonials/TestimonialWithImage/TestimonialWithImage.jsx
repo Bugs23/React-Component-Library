@@ -1,3 +1,5 @@
+import "./TestimonialWithImage.scss"
+
 // Default testimonial image if none are passed
 import defaultTestimonialImage from "/images/testimonial-image-default.jpg"
 
