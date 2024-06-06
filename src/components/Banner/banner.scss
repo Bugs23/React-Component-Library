@@ -1,91 +1,37 @@
 .banner {
     padding: 16px;
     border-radius: 6px;
-    margin-bottom: 16px;
     display: flex;
-}
 
-.banner-icon {
-    margin-right: 12px;
-    font-size: 20px;
-}
-
-.banner-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 2px;
-}
-
-.banner-text {
-    font-size: 16px;
-}
-
-
-
-/******************************
-BANNER COLORS
-******************************/
-
-.banner-success {
-    background-color: #ECFDF5;
-
-    .banner-icon {
-        color: #34D399;
+    &__icon {
+        margin-top: 2px;
+        margin-right: 12px;
+        font-size: 20px;
     }
 
-    .banner-title {
-        color: #065F46;
-    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        &__title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
 
-    .banner-text {
-        color: #047857;
+        &__para {
+            font-size: 16px;
+        }
     }
 }
 
-.banner-warning {
-    background-color: #FFFBEB;
 
-    .banner-icon {
-        color: #FBBF24;
-    }
 
-    .banner-title {
-        color: #92400E;
-    }
 
-    .banner-text {
-        color: #B45309;
-    }
-}
 
-.banner-error {
-    background-color: #FEF2F2;
 
-    .banner-icon {
-        color: #F87171;
-    }
 
-    .banner-title {
-        color: #92400E;
-    }
 
-    .banner-text {
-        color: #B45309;
-    }
-}
 
-.banner-neutral {
-    background-color: #EFF6FF;
 
-    .banner-icon {
-        color: #60A5FA;
-    }
-    
-    .banner-title {
-        color: #1E40AF;
-    }
-
-    .banner-text {
-        color: #1C51B9;
-    }
-}

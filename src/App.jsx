@@ -1,5 +1,11 @@
-import "./app.scss"
-import {badgeColors, bannerTypes} from "./data/data"
+// Styles
+import "./styles/app.scss"
+import "./styles/global.scss"
+
+// Data
+import {colors, bannerTypes} from "./data/data"
+
+// Components
 import Badge from "./components/Badge/Badge"
 import Banner from "./components/Banner/index"
 import Card from "./components/Card/index"
@@ -13,6 +19,11 @@ import testimonialWithoutImageLogo from "/images/logo.png"
 // Card icon
 import { IoCloudUploadOutline } from "react-icons/io5"
 
+import { TbTooltip } from "react-icons/tb"
+import { IoClose } from "react-icons/io5"
+
+
+
 export default function App() {
 
     return (
@@ -23,13 +34,13 @@ export default function App() {
                 <h2 className="component-section__title text-3xl mb-4 text-white">Badges</h2>
                 <h3 className="text-xl text-white mb-2">Square</h3>
                 <div className="component-section__main badges flex mb-4 gap-4 flex-wrap">
-                    {badgeColors.map((color, index) => (
+                    {colors.map((color, index) => (
                         <Badge key={index} color={color} shape="square">{color}</Badge>
                     ))}
                 </div>
                 <h3 className="text-xl text-white mb-2">Pill</h3>
                 <div className="component-section__main badges flex mb-4 gap-4 flex-wrap">
-                    {badgeColors.map((color, index) => (
+                    {colors.map((color, index) => (
                         <Badge key={index} color={color} shape="pill">{color}</Badge>
                     ))}
                 </div>
@@ -38,37 +49,30 @@ export default function App() {
             <section className="mb-8">
                 <h2 className="component-section__title text-3xl mb-4 text-white">Banners</h2>
                 <div className="component-section__main banners grid grid-cols-1 sm:grid-cols-2 gap-4"> 
-                    <div>
-                        <h3 className="text-xl text-white mb-2">Multi line</h3>
+                    <div className="flex flex-col gap-4">
                         {bannerTypes.map((banner, index) => {
                             const Icon = banner.icon
 
                             return (
-                                <Banner key={index} type={banner.type}>
+                                <Banner key={`banner-${index}`} type={banner.type}>
                                     <Banner.Icon>
                                         <Icon />
                                     </Banner.Icon>
-                                    <Banner.Body>
-                                        <Banner.Title>{banner.title}</Banner.Title>
-                                        <Banner.Text>{banner.text}</Banner.Text>
-                                    </Banner.Body>
+                                    <Banner.Text title={banner.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner.Text>
                                 </Banner>
                             )
                         })}
-                    </div>       
-                    <div>
-                        <h3 className="text-xl text-white mb-2">Single line</h3>
+                    </div>
+                    <div className="flex flex-col gap-4">
                         {bannerTypes.map((banner, index) => {
                             const Icon = banner.icon
 
                             return (
-                                <Banner key={index} type={banner.type}>
+                                <Banner key={`banner-${index}`} type={banner.type}>
                                     <Banner.Icon>
                                         <Icon />
                                     </Banner.Icon>
-                                    <Banner.Body>
-                                        <Banner.Title>{banner.title}</Banner.Title>
-                                    </Banner.Body>
+                                    <Banner.Text title={banner.title}></Banner.Text>
                                 </Banner>
                             )
                         })}

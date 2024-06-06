@@ -1,4 +1,4 @@
 
 export default function BannerIcon({children}) {
-    return <span className="banner-icon">{children}</span>
+    return <span className="banner__icon">{children}</span>
 }

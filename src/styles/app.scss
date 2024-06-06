@@ -7,15 +7,14 @@ GENERAL
 @tailwind utilities;
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: rgb(63 63 70);
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: rgb(63 63 70);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
 .main {
@@ -25,7 +24,7 @@ body {
 
 
 /******************************
-TESTIMONIALS SECTION
+TESTIMONIALS SECTION CONTAINER
 ******************************/
 
 .testimonials:first-of-type {
