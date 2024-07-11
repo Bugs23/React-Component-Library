@@ -11,6 +11,7 @@ import Banner from "./components/Banner/index"
 import Card from "./components/Card/index"
 import TestimonialWithImage from "./components/Testimonials/TestimonialWithImage/index"
 import TestimonialWithoutImage from "./components/Testimonials/TestimonialWithoutImage/index"
+import Tooltip from "./components/Tooltip/Tooltip"
 
 // Testimonial image
 import testimonialImage from "/images/testimonial-image.jpg"
@@ -18,9 +19,6 @@ import testimonialWithoutImageLogo from "/images/logo.png"
 
 // Card icon
 import { IoCloudUploadOutline } from "react-icons/io5"
-
-import { TbTooltip } from "react-icons/tb"
-import { IoClose } from "react-icons/io5"
 
 
 
@@ -39,7 +37,7 @@ export default function App() {
                     ))}
                 </div>
                 <h3 className="text-xl text-white mb-2">Pill</h3>
-                <div className="component-section__main badges flex mb-4 gap-4 flex-wrap">
+                <div className="component-section__main badges flex mb-4 gap-4">
                     {colors.map((color, index) => (
                         <Badge key={index} color={color} shape="pill">{color}</Badge>
                     ))}
@@ -113,6 +111,24 @@ export default function App() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
                         </TestimonialWithoutImage.Body>
                     </TestimonialWithoutImage>
+                </div>
+            </section>
+            {/* Tooltips */}
+            <section className="mb-8">
+                <h2 className="component-section__title text-3xl mb-12 text-white">Tooltips</h2>
+                <div className="component-section__main flex gap-4 flex-wrap justify-evenly">
+                    <Tooltip content="This is a tooltip" color="red" position="top">
+                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                    </Tooltip>
+                    <Tooltip content="Another tooltip" color="yellow" position="right">
+                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                    </Tooltip>
+                    <Tooltip content="Yet another tooltip" color="green" position="bottom">
+                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                    </Tooltip>
+                    <Tooltip content="And another tooltip" color="blue" position="left">
+                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                    </Tooltip>
                 </div>
             </section>
         </main>
