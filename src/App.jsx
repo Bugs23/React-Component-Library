@@ -20,8 +20,6 @@ import testimonialWithoutImageLogo from "/images/logo.png"
 // Card icon
 import { IoCloudUploadOutline } from "react-icons/io5"
 
-
-
 export default function App() {
 
     return (
@@ -118,16 +116,16 @@ export default function App() {
                 <h2 className="component-section__title text-3xl mb-12 text-white">Tooltips</h2>
                 <div className="component-section__main flex gap-4 flex-wrap justify-evenly">
                     <Tooltip content="This is a tooltip" color="red" position="top">
-                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                        <button className="bg-blue-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Hover over me</button>
                     </Tooltip>
                     <Tooltip content="Another tooltip" color="yellow" position="right">
-                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                        <button className="bg-blue-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Hover over me</button>
                     </Tooltip>
                     <Tooltip content="Yet another tooltip" color="green" position="bottom">
-                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                        <button className="bg-blue-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Hover over me</button>
                     </Tooltip>
                     <Tooltip content="And another tooltip" color="blue" position="left">
-                        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">Hover over me</button>
+                        <button className="bg-blue-700 hover:bg-blue-500 text-white py-2 px-4 rounded">Hover over me</button>
                     </Tooltip>
                 </div>
             </section>
